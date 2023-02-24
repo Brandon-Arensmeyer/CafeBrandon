@@ -13,6 +13,7 @@
     <header>
         <?php
             include 'header/header.php';
+            echo "test";
         ?>
         <form action="order.php">
             <button id="header" type="submit" > Order </button>
