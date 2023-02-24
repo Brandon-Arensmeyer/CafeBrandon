@@ -15,7 +15,9 @@
             include 'header/header.php';
             echo 'hello Steve and Brandon!!!!';
         ?>
-        
+        <form action="order.php">
+            <button type="submit"> Order </button>
+         </form>        
     </header>
 
     <div class="Menu">
