@@ -13,10 +13,9 @@
     <header>
         <?php
             include 'header/header.php';
-            echo 'hello Steve and Brandon!!!!';
         ?>
         <form action="order.php">
-            <button type="submit"> Order </button>
+            <button type="submit" id="header"> Order </button>
          </form>        
     </header>
 
