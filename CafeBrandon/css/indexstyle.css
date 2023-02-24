@@ -40,16 +40,6 @@ button{
 
 }
 
-#header{
-    font-size: 1vw;
-    width: 10%;
-    height: 10%;
-    margin: 0 auto;
-    padding: 10%;
-    display: table-cell;
-    vertical-align: middle;
-}
-
 table, td { 
     border: 2px solid; 
     width: 65%;

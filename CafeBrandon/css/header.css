@@ -1,7 +1,7 @@
 header{
     justify-content: space-between;
     justify-content: center;
-    display: flex;
+    /* display: flex; */
     border-bottom: 5px solid black;
     
     width: 100%;
