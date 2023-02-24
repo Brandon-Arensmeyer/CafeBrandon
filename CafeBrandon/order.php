@@ -14,11 +14,11 @@
         <?php if ($_SERVER['REQUEST_METHOD'] === 'GET') : ?>
             <form action="<?php $_SERVER['PHP_SELF'] ?>" method="POST">
                 <div>
-                    <label for="catName">Item Name:</label>
+                    <label for="catName">Name:</label>
                     <input type="text" name="catName" />
                 </div>
                 <div>
-                    <label for="descr">Description:</label>
+                    <label for="descr">Food:</label>
                     <input type="text" name="descr" />
                 </div>
                 <div>
