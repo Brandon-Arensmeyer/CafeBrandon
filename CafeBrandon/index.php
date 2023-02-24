@@ -15,7 +15,7 @@
             include 'header/header.php';
         ?>
         <form action="order.php">
-            <button type="submit" id="header"> Order </button>
+            <button id="header" type="submit" > Order </button>
          </form>        
     </header>
 
