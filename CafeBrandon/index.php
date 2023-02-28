@@ -14,13 +14,13 @@
         <?php
             include 'header/header.php';
         ?>
-        <form action="signIn.php">
+        <form id="head" action="signIn.php">
             <button id="header" type="submit" > Sign In </button>
          </form>        
-         <form action="logIn.php">
+         <form id="head" action="logIn.php">
             <button id="header" type="submit" > Log In </button>
          </form>        
-         <form action="order.php">
+         <form id="head" action="order.php">
             <button id="header" type="submit" > Order </button>
          </form>        
     </header>
