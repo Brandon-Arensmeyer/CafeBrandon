@@ -39,6 +39,15 @@ button{
 
 } 
 
+#header{
+    font-size: 1vw;
+    width: 25%;
+    height: 25%;
+    margin: 0 auto;
+    display: flex;
+    align-self: right;
+}
+
 table, td { 
     border: 2px solid; 
     width: 65%;
