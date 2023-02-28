@@ -43,7 +43,7 @@
                     <label for="price">Price:</label>
                     <input type="text" name="price" />
                 </div>
-                <button type="submit">Add Item</button>
+                <button id="order" type="submit">Add Item</button>
             </form>
         <?php
         elseif (!in_array("", $_POST)) :
