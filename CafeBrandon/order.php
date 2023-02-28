@@ -32,11 +32,11 @@
     <main>
         <?php if ($_SERVER['REQUEST_METHOD'] === 'GET') : ?>
             <form action="<?php $_SERVER['PHP_SELF'] ?>" method="POST">
-                <div>
+                <div id="item">
                     <label id="food" for="catName">Food:</label>
                     <input id="foodText" type="text" name="catName" />
                 </div>
-                <div>
+                <div id="desc">
                     <label id="desc" for="descr">Descriptions/Add ons:</label>
                     <input id="descText" type="text" name="descr" />
                 </div>
