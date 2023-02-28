@@ -14,15 +14,17 @@
         <?php
             include 'header/header.php';
         ?>
-        <form id="head" action="signIn.php">
-            <button id="header" type="submit" > Sign In </button>
-         </form>        
-         <form id="head" action="logIn.php">
-            <button id="header" type="submit" > Log In </button>
-         </form>        
-         <form id="head" action="order.php">
-            <button id="header" type="submit" > Order </button>
-         </form>        
+        <div id="top">
+            <form id="head" action="signIn.php">
+               <button id="header" type="submit" > Sign In </button>
+             </form>        
+             <form id="head" action="logIn.php">
+                <button id="header" type="submit" > Log In </button>
+             </form>        
+             <form id="head" action="order.php">
+                <button id="header" type="submit" > Order </button>
+             </form>  
+        </div>      
     </header>
 
     <div class="Menu">
