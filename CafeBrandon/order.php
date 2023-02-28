@@ -36,7 +36,7 @@
                     <label id="food" for="catName">Food:</label>
                     <input id="foodText" type="text" name="catName" />
                 </div>
-                <div id="desc">
+                <div id="request">
                     <label id="desc" for="descr">Descriptions/Add ons:</label>
                     <input id="descText" type="text" name="descr" />
                 </div>

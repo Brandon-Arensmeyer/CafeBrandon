@@ -1,9 +1,17 @@
-div{
+#item{
     display: flex;
     width: 100%;
     justify-content: center;
     align-items: center;
 }
+
+#request{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
 
 #food{
     
@@ -14,8 +22,9 @@ div{
 }
 
 #desc{
-
+    
 }
 
 #descText{
-    
+
+}
