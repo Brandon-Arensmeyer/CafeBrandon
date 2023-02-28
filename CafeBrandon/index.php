@@ -29,20 +29,20 @@
 
     <div class="Menu">
         <form action="breakfast.php">
-            <button type="submit" style="background: url(images/breakfast.png) no-repeat; background-position: center; background-size: cover;"> Breakfast Menu </button>
+            <button id="menu" type="submit" style="background: url(images/breakfast.png) no-repeat; background-position: center; background-size: cover;"> Breakfast Menu </button>
         </form>
     </div>
 
     <div class="Menu">
         <form action="lunch.php">
-            <button type="submit" style="background: url(images/lunch.png) no-repeat; background-position: center; background-size: cover;"> Lunch Menu </button>
+            <button id="menu" type="submit" style="background: url(images/lunch.png) no-repeat; background-position: center; background-size: cover;"> Lunch Menu </button>
         </form>
 
     </div>
 
     <div class="Menu">
         <form action="dinner.php">
-            <button type="submit" style="background: url(images/dinner.png) no-repeat; background-position: center; background-size: cover;"> Dinner Menu </button>
+            <button id="menu" type="submit" style="background: url(images/dinner.png) no-repeat; background-position: center; background-size: cover;"> Dinner Menu </button>
         </form>
 
     </div>
