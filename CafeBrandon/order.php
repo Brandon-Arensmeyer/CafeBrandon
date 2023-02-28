@@ -31,6 +31,7 @@
 
     <main>
         <?php if ($_SERVER['REQUEST_METHOD'] === 'GET') : ?>
+            <?php echo "<h2>Please order anything you would like</h2>"; ?>
             <form action="<?php $_SERVER['PHP_SELF'] ?>" method="POST">
                 <div id="item">
                     <label id="food" for="catName">Food:</label>
