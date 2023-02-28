@@ -33,17 +33,17 @@
         <?php if ($_SERVER['REQUEST_METHOD'] === 'GET') : ?>
             <form action="<?php $_SERVER['PHP_SELF'] ?>" method="POST">
                 <div>
-                    <label for="catName">Name:</label>
-                    <input type="text" name="catName" />
+                    <label id="food" for="catName">Food:</label>
+                    <input id="foodText" type="text" name="catName" />
                 </div>
                 <div>
-                    <label for="descr">Food:</label>
-                    <input type="text" name="descr" />
+                    <label id="desc" for="descr">Descriptions/Add ons:</label>
+                    <input id="descText" type="text" name="descr" />
                 </div>
-                <div>
+                <!-- <div>
                     <label for="price">Price:</label>
                     <input type="text" name="price" />
-                </div>
+                </div> -->
                 <button id="order" type="submit">Add Item</button>
             </form>
         <?php
