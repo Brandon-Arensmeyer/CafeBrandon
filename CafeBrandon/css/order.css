@@ -43,3 +43,10 @@ main{
     display: inline-block;
     width: 100%;
 }
+
+#order{
+    position: fixed;
+    display: inline-block;
+    left: 43%;
+    top: 110%;
+}
