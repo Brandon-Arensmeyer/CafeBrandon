@@ -51,8 +51,8 @@
                 echo "connection failed";
             }
 
-            // $sql = "INSERT INTO customers
-            // VALUES (null, $fName, $lName, $pass)";
+            $sql = "INSERT INTO customers
+            VALUES (null, $fName, $lName, $pass)";
             // if ($conn->query($sql) === TRUE){
             //     echo "New record created successfully";
             // }else{
