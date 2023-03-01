@@ -47,9 +47,20 @@ h2{
     width: 100%;
 }
 
-button{
+#log{
     position: fixed;
     display: inline-block;
-    left: 43%;
+    left: 42%;
     top:  100%;
+    width: 75px;
+    height: 25px;
+}
+
+#home{
+    position: fixed;
+    display: inline-block;
+    left: 42%;
+    top: 125%;
+    width: 75px;
+    height: 25px;
 }
