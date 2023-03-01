@@ -45,6 +45,9 @@
             if ($conn->connect_error){
                 die("Connection failed: " . $conn->connect_error);
             }
+            else{
+                echo "works so far";
+            }
 
             $sql = "INSERT INTO customers (cust_id, cust_fname, cust_lname, cust_email)
             VALUES ('John', 'Doe', 'john@example.com')";
