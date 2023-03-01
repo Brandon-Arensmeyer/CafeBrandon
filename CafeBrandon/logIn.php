@@ -10,7 +10,7 @@
 <body>
     <header>
         <div id="top">
-            <form id="head" action="signIn.php">
+            <form id="head" action="home.php">
                <button id="home" type="submit" > home </button>
              </form>        
         </div>      
