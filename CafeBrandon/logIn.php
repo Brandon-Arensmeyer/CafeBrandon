@@ -10,7 +10,7 @@
 <body>
     <main>
         <?php if ($_SERVER['REQUEST_METHOD'] === 'GET') : ?>
-            <?php echo "<h2>Please order anything you would like</h2>"; ?>
+            <?php echo "<h2>Please enter your account information below</h2>"; ?>
             <form action="<?php $_SERVER['PHP_SELF'] ?>" method="POST">
                 <div id="fName">
                     <label id="first" for="catName">First name:</label>
@@ -20,7 +20,7 @@
                     <label id="last" for="descr">Last name:</label>
                     <input id="lastText" type="text" name="descr" />
                 </div>
-                <div>
+                <div id="pass">
                     <label id="password" for="price">Password:</label>
                     <input id="passwordText" type="text" name="price" />
                 </div>
