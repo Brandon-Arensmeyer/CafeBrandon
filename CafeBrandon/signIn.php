@@ -36,21 +36,21 @@
             </form>
         <?php
         elseif (!in_array("", $_POST)) :
+            $servername = "cafeInfo";
+            $username = "steverq1_brandon";
+            $password = "Csci213+#002";
+            $dbname = "steverq1_brandon";
             // elseif (isset($_POST['catName']) && isset($_POST['descr']) && isset($_POST['price'])):
-            $id = NULL;
             $fName = htmlspecialchars(strip_tags($_POST['fName']));
             $lName = htmlspecialchars(strip_tags($_POST['lName']));
             $pass = htmlspecialchars(strip_tags($_POST['pass']));
-            $conn = new mysqli($id, $fName, $lName, $pass);
+            $conn = new mysqli($servername, $username, $password, $dbname);
             if ($conn->connect_error){
                 die("Connection failed: " . $conn->connect_error);
             }
-            else{
-                echo "works so far";
-            }
 
             $sql = "INSERT INTO customers (cust_id, cust_fname, cust_lname, cust_email)
-            VALUES ('John', 'Doe', 'john@example.com')";
+            VALUES ($fName, $lName, $pass)";
             if ($conn->query($sql) === TRUE){
                 echo "New record created successfully";
             }else{
