@@ -53,7 +53,8 @@
             $descr = htmlspecialchars(strip_tags($_POST['descr']));
             $price = htmlspecialchars(strip_tags($_POST['price']));
             // echo var_export($_POST['price'], true)."<br>";
-            echo "$catName, $descr, $price<br>";
+            echo "<h2> Thank you for ordering! <h2>";
+            echo "<h3> You ordered $catName, and asked for $descr <h3> <br>";
         else :
             echo "Please fill out all fields<br>";
         endif;
