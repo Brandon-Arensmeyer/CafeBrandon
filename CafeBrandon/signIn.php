@@ -36,26 +36,28 @@
             </form>
         <?php
         elseif (!in_array("", $_POST)) :
-            $servername = "cafeInfo";
-            $username = "steverq1_brandon";
-            $password = "Csci213+#002";
-            $dbname = "steverq1_brandon";
+            
             // elseif (isset($_POST['catName']) && isset($_POST['descr']) && isset($_POST['price'])):
             $fName = htmlspecialchars(strip_tags($_POST['fName']));
             $lName = htmlspecialchars(strip_tags($_POST['lName']));
             $pass = htmlspecialchars(strip_tags($_POST['pass']));
-            $conn = new mysqli($servername, $username, $password, $dbname);
-            if ($conn->connect_error){
-                die("Connection failed: " . $conn->connect_error);
-            }
+            
+            // $servername = "cafeInfo";
+            // $username = "steverq1_brandon";
+            // $password = "Csci213+#002";
+            // $dbname = "steverq1_brandon";
+            // $conn = new mysqli($servername, $username, $password, $dbname);
+            // if ($conn->connect_error){
+            //     die("Connection failed: " . $conn->connect_error);
+            // }
 
-            $sql = "INSERT INTO customers
-            VALUES (null, $fName, $lName, $pass)";
-            if ($conn->query($sql) === TRUE){
-                echo "New record created successfully";
-            }else{
-                echo "Error: " . $sql . "<br>" . $conn->error;
-            }
+            // $sql = "INSERT INTO customers
+            // VALUES (null, $fName, $lName, $pass)";
+            // if ($conn->query($sql) === TRUE){
+            //     echo "New record created successfully";
+            // }else{
+            //     echo "Error: " . $sql . "<br>" . $conn->error;
+            // }
             // echo var_export($_POST['price'], true)."<br>";
             echo "<h2> Welcome $fName $lName, you are now signed in! <h2>";
         else :
