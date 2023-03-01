@@ -40,8 +40,20 @@
             $fName = htmlspecialchars(strip_tags($_POST['fName']));
             $lName = htmlspecialchars(strip_tags($_POST['lName']));
             $pass = htmlspecialchars(strip_tags($_POST['pass']));
+            $conn = new mysqli($id, $fName, $lName, $pass);
+            if ($conn->connect_error){
+                die("Connection failed: " . $conn->connect_error);
+            }
+
+            $sql = "INSERT INTO customers (cust_id, cust_fname, cust_lname, cust_email)
+            VALUES ('John', 'Doe', 'john@example.com')";
+            if ($conn->query($sql) === TRUE){
+                echo "New record created successfully";
+            }else{
+                echo "Error: " . $sql . "<br>" . $conn->error;
+            }
             // echo var_export($_POST['price'], true)."<br>";
-            echo "<h2> Welcome $fName $lName, you are now signed in! <h2>";
+            // echo "<h2> Welcome $fName $lName, you are now signed in! <h2>";
         else :
             echo "Please fill out all fields<br>";
         endif;
