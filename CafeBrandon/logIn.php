@@ -11,7 +11,7 @@
     <header>
         <div id="top">
             <form id="head" action="index.php">
-               <button id="home" type="submit" > home </button>
+               <button id="home" type="submit" > Home </button>
              </form>        
         </div>      
     </header>

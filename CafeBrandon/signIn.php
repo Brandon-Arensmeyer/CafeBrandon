@@ -11,14 +11,14 @@
     <header>
         <div id="top">
             <form id="head" action="index.php">
-               <button id="home" type="submit" > home </button>
+               <button id="home" type="submit" > Home </button>
              </form>        
         </div>      
     </header>
 
     <main>
         <?php if ($_SERVER['REQUEST_METHOD'] === 'GET') : ?>
-            <?php echo "<h2>Please enter your account information below</h2>"; ?>
+            <?php echo "<h2>Please sign in with your information below</h2>"; ?>
             <form action="<?php $_SERVER['PHP_SELF'] ?>" method="POST">
                 <div id="fName">
                     <label id="first" for="catName">First name:</label>
@@ -32,7 +32,7 @@
                     <label id="password" for="price">Password:</label>
                     <input id="passwordText" type="text" name="price" />
                 </div>
-                <button id="log" type="submit">Log In</button>
+                <button id="log" type="submit">Sign In</button>
             </form>
         <?php
         elseif (!in_array("", $_POST)) :
