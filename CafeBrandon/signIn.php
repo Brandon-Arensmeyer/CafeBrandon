@@ -37,6 +37,7 @@
         <?php
         elseif (!in_array("", $_POST)) :
             // elseif (isset($_POST['catName']) && isset($_POST['descr']) && isset($_POST['price'])):
+            $id = NULL;
             $fName = htmlspecialchars(strip_tags($_POST['fName']));
             $lName = htmlspecialchars(strip_tags($_POST['lName']));
             $pass = htmlspecialchars(strip_tags($_POST['pass']));
