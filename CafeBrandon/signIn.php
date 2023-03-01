@@ -50,7 +50,7 @@
             }
 
             $sql = "INSERT INTO customers (cust_id, cust_fname, cust_lname, cust_email)
-            VALUES ($fName, $lName, $pass)";
+            VALUES (null, $fName, $lName, $pass)";
             if ($conn->query($sql) === TRUE){
                 echo "New record created successfully";
             }else{
