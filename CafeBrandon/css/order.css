@@ -1,24 +1,45 @@
 body{
-    justify-content: center;
-    align-items: center;
     background: antiquewhite;
+}
+main{
+    position: fixed;
+    background: antiquewhite;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 #item{
-    display: flex;
+    display: inline-block;
     width: 100%;
     justify-content: center;
     align-items: center;
     margin-bottom: 5%;
 }
 
-#request{
+#food{
     display: flex;
+    justify-content: center;
+}
+
+#foodText{
+    display: inline-block;
+    width: 100%;
+}
+
+#request{
+    display: inline-block;
     width: 100%;
     justify-content: center;
     align-items: center;
 }
 
+#desc{
+    display: flex;
+    justify-content: center;
+}
+
 #descText{
-    width: 50%;
+    display: inline-block;
+    width: 100%;
 }
