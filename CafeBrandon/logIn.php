@@ -5,26 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/logIn.css">
-    <link rel="stylesheet" href="css/header.css">
     <title>Log In</title>
 </head>
 <body>
     <header>
-        <?php
-            include 'header/header.php';
-        ?>
         <div id="top">
             <form id="head" action="signIn.php">
-               <button id="header" type="submit" > Sign In </button>
+               <button id="home" type="submit" > home </button>
              </form>        
-             <form id="head" action="logIn.php">
-                <button id="header" type="submit" > Log In </button>
-             </form>        
-             <form id="head" action="order.php">
-                <button id="header" type="submit" > Order </button>
-             </form>  
         </div>      
     </header>
+
     <main>
         <?php if ($_SERVER['REQUEST_METHOD'] === 'GET') : ?>
             <?php echo "<h2>Please enter your account information below</h2>"; ?>
