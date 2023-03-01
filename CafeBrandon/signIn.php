@@ -54,13 +54,13 @@
             $sql = "INSERT INTO customer (cust_id, cust_fname, cust_lname, cust_password) 
             VALUES ('null', '$fName', '$lName', '$pass')";
             if ($conn->query($sql) === TRUE){
-                echo "New record created successfully";
+                echo "<h2> Welcome $fName $lName, you are now signed in! <h2>";
             }
             //else{
             //     echo "Error: " . $sql . "<br>" . $conn->error;
             // }
             // echo var_export($_POST['price'], true)."<br>";
-            echo "<h2> Welcome $fName $lName, you are now signed in! <h2>";
+            echo "";
         else :
             echo "Please fill out all fields<br>";
         endif;
