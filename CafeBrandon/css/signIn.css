@@ -1,3 +1,67 @@
 body{
     background: antiquewhite;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+div{
+    display: inline-block;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5%;
+}
+
+h2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#first{
+    display: flex;
+    justify-content: center;
+}
+
+#firstText{
+    width: 100%;
+}
+
+#last{
+    display: flex;
+    justify-content: center;
+}
+
+#lastText{
+    width: 100%;
+}
+
+#password{
+    display: flex;
+    justify-content: center;
+}
+
+#passwordText{
+    width: 100%;
+}
+
+#log{
+    position: fixed;
+    display: inline-block;
+    left: 42%;
+    top:  100%;
+    width: 75px;
+    height: 25px;
+}
+
+#home{
+    position: fixed;
+    display: inline-block;
+    left: 42%;
+    top: 125%;
+    width: 75px;
+    height: 25px;
 }

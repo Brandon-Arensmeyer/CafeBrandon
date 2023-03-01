@@ -8,9 +8,17 @@
     <title>Sign In</title>
 </head>
 <body>
-    <main> 
+    <header>
+        <div id="top">
+            <form id="head" action="index.php">
+               <button id="home" type="submit" > home </button>
+             </form>        
+        </div>      
+    </header>
+
+    <main>
         <?php if ($_SERVER['REQUEST_METHOD'] === 'GET') : ?>
-            <?php echo "<h2>Please order anything you would like</h2>"; ?>
+            <?php echo "<h2>Please enter your account information below</h2>"; ?>
             <form action="<?php $_SERVER['PHP_SELF'] ?>" method="POST">
                 <div id="fName">
                     <label id="first" for="catName">First name:</label>
@@ -20,11 +28,11 @@
                     <label id="last" for="descr">Last name:</label>
                     <input id="lastText" type="text" name="descr" />
                 </div>
-                <div>
+                <div id="pass">
                     <label id="password" for="price">Password:</label>
                     <input id="passwordText" type="text" name="price" />
                 </div>
-                <button id="order" type="submit">Add Item</button>
+                <button id="log" type="submit">Log In</button>
             </form>
         <?php
         elseif (!in_array("", $_POST)) :
