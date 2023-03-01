@@ -42,11 +42,11 @@
             $lName = htmlspecialchars(strip_tags($_POST['lName']));
             $pass = htmlspecialchars(strip_tags($_POST['pass']));
             
-            $servername = "cafeInfo";
+            $servername = "localhost";
             $username = "steverq1_brandon";
             $password = "Csci213+#002";
             $dbname = "steverq1_brandon";
-            // $conn = new mysqli($servername, $username, $password, $dbname);
+            $conn = new mysqli($servername, $username, $password, $dbname);
             // if ($conn->connect_error){
             //     echo "connection failed";
             // }
