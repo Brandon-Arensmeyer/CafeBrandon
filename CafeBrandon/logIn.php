@@ -24,7 +24,8 @@
                     <label id="password" for="price">Password:</label>
                     <input id="passwordText" type="text" name="price" />
                 </div>
-                <button id="order" type="submit">Add Item</button>
+                <button id="log" type="submit">Log In</button>
+                <button id="home" type="submit"> Home </button>
             </form>
         <?php
         elseif (!in_array("", $_POST)) :
