@@ -42,14 +42,15 @@
             $lName = htmlspecialchars(strip_tags($_POST['lName']));
             $pass = htmlspecialchars(strip_tags($_POST['pass']));
             
-            // $servername = "cafeInfo";
-            // $username = "steverq1_brandon";
-            // $password = "Csci213+#002";
-            // $dbname = "steverq1_brandon";
-            // $conn = new mysqli($servername, $username, $password, $dbname);
-            // if ($conn->connect_error){
-            //     die("Connection failed: " . $conn->connect_error);
-            // }
+            $servername = "cafeInfo";
+            $username = "steverq1_brandon";
+            $password = "Csci213+#002";
+            $dbname = "steverq1_brandon";
+            $conn = new mysqli($servername, $username, $password, $dbname);
+            if ($conn->connect_error){
+                echo "connection failed";
+                die("Connection failed: " . $conn->connect_error);
+            }
 
             // $sql = "INSERT INTO customers
             // VALUES (null, $fName, $lName, $pass)";
