@@ -51,14 +51,14 @@
                 echo "connection failed";
             }
 
-            $sql = "INSERT INTO customers
-            VALUES (null, $fName, $lName, $pass)";
-            if ($conn->query($sql) === TRUE){
-                echo "New record created successfully";
-            }else{
-                echo "Error: " . $sql . "<br>" . $conn->error;
-            }
-            echo var_export($_POST['price'], true)."<br>";
+            // $sql = "INSERT INTO customers
+            // VALUES (null, $fName, $lName, $pass)";
+            // if ($conn->query($sql) === TRUE){
+            //     echo "New record created successfully";
+            // }else{
+            //     echo "Error: " . $sql . "<br>" . $conn->error;
+            // }
+            // echo var_export($_POST['price'], true)."<br>";
             echo "<h2> Welcome $fName $lName, you are now signed in! <h2>";
         else :
             echo "Please fill out all fields<br>";
