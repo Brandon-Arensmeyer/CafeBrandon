@@ -13,15 +13,15 @@
             <?php echo "<h2>Please order anything you would like</h2>"; ?>
             <form action="<?php $_SERVER['PHP_SELF'] ?>" method="POST">
                 <div id="fName">
-                    <label id="first" for="catName">Food:</label>
+                    <label id="first" for="catName">First name:</label>
                     <input id="firstText" type="text" name="catName" />
                 </div>
                 <div id="lName">
-                    <label id="last" for="descr">Descriptions/Add ons:</label>
+                    <label id="last" for="descr">Last name:</label>
                     <input id="lastText" type="text" name="descr" />
                 </div>
                 <div>
-                    <label id="password" for="price">Price:</label>
+                    <label id="password" for="price">Password:</label>
                     <input id="passwordText" type="text" name="price" />
                 </div>
                 <button id="order" type="submit">Add Item</button>
