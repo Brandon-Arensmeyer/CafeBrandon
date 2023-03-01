@@ -51,11 +51,12 @@
                 echo "connection failed";
             }
 
-            $sql = "INSERT INTO customers
+            $sql = "INSERT INTO customers (cust_id, cust_fname, cust_lan, cust_email) 
             VALUES (null, $fName, $lName, $pass)";
-            // if ($conn->query($sql) === TRUE){
-            //     echo "New record created successfully";
-            // }else{
+            if ($conn->query($sql) === TRUE){
+                echo "New record created successfully";
+            }
+            //else{
             //     echo "Error: " . $sql . "<br>" . $conn->error;
             // }
             // echo var_export($_POST['price'], true)."<br>";
