@@ -22,27 +22,26 @@
             <form action="<?php $_SERVER['PHP_SELF'] ?>" method="POST">
                 <div id="fName">
                     <label id="first" for="catName">First name:</label>
-                    <input id="firstText" type="text" name="catName" />
+                    <input id="firstText" type="text" name="fName" />
                 </div>
                 <div id="lName">
                     <label id="last" for="descr">Last name:</label>
-                    <input id="lastText" type="text" name="descr" />
+                    <input id="lastText" type="text" name="lName" />
                 </div>
                 <div id="pass">
                     <label id="password" for="price">Password:</label>
-                    <input id="passwordText" type="text" name="price" />
+                    <input id="passwordText" type="text" name="pass" />
                 </div>
                 <button id="log" type="submit">Sign In</button>
             </form>
         <?php
         elseif (!in_array("", $_POST)) :
             // elseif (isset($_POST['catName']) && isset($_POST['descr']) && isset($_POST['price'])):
-            $catName = htmlspecialchars(strip_tags($_POST['catName']));
-            $descr = htmlspecialchars(strip_tags($_POST['descr']));
-            $price = htmlspecialchars(strip_tags($_POST['price']));
+            $fName = htmlspecialchars(strip_tags($_POST['fName']));
+            $lName = htmlspecialchars(strip_tags($_POST['lName']));
+            $pass = htmlspecialchars(strip_tags($_POST['pass']));
             // echo var_export($_POST['price'], true)."<br>";
-            echo "<h2> Thank you for ordering! <h2>";
-            echo "<h3> You ordered $catName, and added '$descr' to the description<h3> <br>";
+            echo "<h2> Welcome $fName $lName, you are now signed in! <h2>";
         else :
             echo "Please fill out all fields<br>";
         endif;
