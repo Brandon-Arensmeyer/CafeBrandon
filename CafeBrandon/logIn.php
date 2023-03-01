@@ -8,6 +8,7 @@
     <title>Log In</title>
 </head>
 <body>
+    <button id="home" type="submit"> Home </button>
     <main>
         <?php if ($_SERVER['REQUEST_METHOD'] === 'GET') : ?>
             <?php echo "<h2>Please enter your account information below</h2>"; ?>
@@ -25,7 +26,6 @@
                     <input id="passwordText" type="text" name="price" />
                 </div>
                 <button id="log" type="submit">Log In</button>
-                <button id="home" type="submit"> Home </button>
             </form>
         <?php
         elseif (!in_array("", $_POST)) :
