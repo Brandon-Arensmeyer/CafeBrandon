@@ -44,7 +44,7 @@
 
             $filterResult = mysqli_query($conn, $selectSQL);
 
-            while($row = mysqli_fetch_array($search_result)){
+            while($row = mysqli_fetch_array($filterResult)){
                 echo $row['fname'];
             }
             
