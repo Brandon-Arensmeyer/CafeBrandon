@@ -47,9 +47,9 @@
                 return $filterResult; 
             }
 
-            while($row = mysqli_fetch_array($search_result)){
-                echo $row['fname'];
-            }
+            // while($row = mysqli_fetch_array($search_result)){
+            //     echo $row['fname'];
+            // }
             
             // elseif (isset($_POST['catName']) && isset($_POST['descr']) && isset($_POST['price'])):
             $catName = htmlspecialchars(strip_tags($_POST['catName']));
