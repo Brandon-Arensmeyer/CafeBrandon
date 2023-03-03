@@ -41,12 +41,15 @@
         <?php
         elseif (!in_array("", $_POST)) :
             
+
             // elseif (isset($_POST['catName']) && isset($_POST['descr']) && isset($_POST['price'])):
             $fName = htmlspecialchars(strip_tags($_POST['fName']));
             $lName = htmlspecialchars(strip_tags($_POST['lName']));
             $user = htmlspecialchars(strip_tags($_POST['user']));
             $pass = htmlspecialchars(strip_tags($_POST['pass']));
-            
+
+            $password = password_hash($pass, PASSWORD_DEFAULT);
+
             $servername = "localhost";
             $username = "steverq1_brandon";
             $password = "Csci213+#002";
@@ -57,7 +60,7 @@
             }
 
             $sql = "INSERT INTO customer (cust_id, cust_fname, cust_lname, cust_user, cust_pass) 
-            VALUES ('null', '$fName', '$lName', '$user', '$pass')";
+            VALUES ('null', '$fName', '$lName', '$user', '$password')";
             if ($conn->query($sql) === TRUE){
                 echo "<h2> Welcome $fName $lName, you are now signed in! <h2>";
             }
