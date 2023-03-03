@@ -48,7 +48,7 @@
             $user = htmlspecialchars(strip_tags($_POST['user']));
             $pass = htmlspecialchars(strip_tags($_POST['pass']));
 
-            $password = password_hash($pass, PASSWORD_DEFAULT);
+            $hashed = password_hash($pass, PASSWORD_DEFAULT);
 
             $servername = "localhost";
             $username = "steverq1_brandon";
@@ -60,7 +60,7 @@
             }
 
             $sql = "INSERT INTO customer (cust_id, cust_fname, cust_lname, cust_user, cust_pass) 
-            VALUES ('null', '$fName', '$lName', '$user', '$password')";
+            VALUES ('null', '$fName', '$lName', '$user', '$hashed')";
             if ($conn->query($sql) === TRUE){
                 echo "<h2> Welcome $fName $lName, you are now signed in! <h2>";
             }
