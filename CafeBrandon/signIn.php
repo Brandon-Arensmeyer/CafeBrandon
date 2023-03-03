@@ -56,7 +56,7 @@
                 echo "connection failed";
             }
 
-            $sql = "INSERT INTO customer (cust_id, cust_fname, cust_lname, cust_user, cust_password) 
+            $sql = "INSERT INTO customer (cust_id, cust_fname, cust_lname, cust_user, cust_pass) 
             VALUES ('null', '$fName', '$lName', '$user', '$pass')";
             if ($conn->query($sql) === TRUE){
                 echo "<h2> Welcome $fName $lName, you are now signed in! <h2>";
