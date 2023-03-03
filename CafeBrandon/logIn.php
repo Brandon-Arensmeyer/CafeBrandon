@@ -41,12 +41,12 @@
                 echo "connection failed";
             }
 
-            $selectSQL = 'SELECT * FROM customer';
-            if( !( $selectRes = mysql_query( $selectSQL ) ) ){
-                echo '<p>Insert of Row into Database Failed</p>';
-            }else{
-                echo '<p>Person\'s Information inserted';
-            }
+            // $selectSQL = 'SELECT * FROM customer';
+            // if( !( $selectRes = mysql_query( $selectSQL ) ) ){
+            //     echo '<p>Insert of Row into Database Failed</p>';
+            // }else{
+            //     echo '<p>Person\'s Information inserted';
+            // }
             
             
             // elseif (isset($_POST['catName']) && isset($_POST['descr']) && isset($_POST['price'])):
