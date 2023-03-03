@@ -35,7 +35,7 @@
             
 
             $selectSQL = 'SELECT * FROM customer';
-            $seach_result = filterTable($selectSQL);
+            $search_result = filterTable($selectSQL);
 
             function filterTable($query){
                 $servername = "localhost";
