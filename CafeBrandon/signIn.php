@@ -28,6 +28,10 @@
                     <label id="last" for="descr">Last name:</label>
                     <input id="lastText" type="text" name="lName" />
                 </div>
+                <div id="user">
+                    <label id="password" for="price">Username:</label>
+                    <input id="passwordText" type="text" name="user" />
+                </div>
                 <div id="pass">
                     <label id="password" for="price">Password:</label>
                     <input id="passwordText" type="text" name="pass" />
@@ -40,6 +44,7 @@
             // elseif (isset($_POST['catName']) && isset($_POST['descr']) && isset($_POST['price'])):
             $fName = htmlspecialchars(strip_tags($_POST['fName']));
             $lName = htmlspecialchars(strip_tags($_POST['lName']));
+            $user = htmlspecialchars(strip_tags($_POST['user']));
             $pass = htmlspecialchars(strip_tags($_POST['pass']));
             
             $servername = "localhost";
@@ -51,8 +56,8 @@
                 echo "connection failed";
             }
 
-            $sql = "INSERT INTO customer (cust_id, cust_fname, cust_lname, cust_password) 
-            VALUES ('null', '$fName', '$lName', '$pass')";
+            $sql = "INSERT INTO customer (cust_id, cust_fname, cust_lname, cust_user, cust_password) 
+            VALUES ('null', '$fName', '$lName', '$user', '$pass')";
             if ($conn->query($sql) === TRUE){
                 echo "<h2> Welcome $fName $lName, you are now signed in! <h2>";
             }
