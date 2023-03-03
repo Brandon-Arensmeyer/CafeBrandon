@@ -35,17 +35,14 @@
             
 
             $selectSQL = 'SELECT * FROM customer';
-            $search_result = filterTable($selectSQL);
+            
+            $servername = "localhost";
+            $username = "steverq1_brandon";
+            $password = "Csci213+#002";
+            $dbname = "steverq1_brandon";
+            $conn = new mysqli($servername, $username, $password, $dbname);
 
-            function filterTable($query){
-                $servername = "localhost";
-                $username = "steverq1_brandon";
-                $password = "Csci213+#002";
-                $dbname = "steverq1_brandon";
-                // $conn = new mysqli($servername, $username, $password, $dbname);
-                // $filterResult = mysqli_query($conn, $query);
-                // return $filterResult; 
-            }
+            $filterResult = mysqli_query($conn, $selectSQL);
 
             // while($row = mysqli_fetch_array($search_result)){
             //     echo $row['fname'];
