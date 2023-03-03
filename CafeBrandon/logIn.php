@@ -32,6 +32,23 @@
             </form>
         <?php
         elseif (!in_array("", $_POST)) :
+            $servername = "localhost";
+            $username = "steverq1_brandon";
+            $password = "Csci213+#002";
+            $dbname = "steverq1_brandon";
+            $conn = new mysqli($servername, $username, $password, $dbname);
+            if ($conn->connect_error){
+                echo "connection failed";
+            }
+
+            $selectSQL = 'SELECT * FROM customer';
+            if( !( $selectRes = mysql_query( $selectSQL ) ) ){
+                echo '<p>Insert of Row into Database Failed</p>';
+            }else{
+                echo '<p>Person\'s Information inserted';
+            }
+            
+            
             // elseif (isset($_POST['catName']) && isset($_POST['descr']) && isset($_POST['price'])):
             $catName = htmlspecialchars(strip_tags($_POST['catName']));
             $price = htmlspecialchars(strip_tags($_POST['price']));
