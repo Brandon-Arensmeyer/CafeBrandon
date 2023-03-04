@@ -49,7 +49,9 @@
 
             while($row = mysqli_fetch_array($filterResult)):
                 if($user === $row['cust_user']):
-                    echo $row['cust_fname'];
+                    if($pass = $row['cust_pass']):
+                        echo $row['cust_fname'];
+                    endif;
                 endif;
             endwhile;
             // elseif (isset($_POST['catName']) && isset($_POST['descr']) && isset($_POST['price'])):
