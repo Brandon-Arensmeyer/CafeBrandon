@@ -45,7 +45,7 @@
             $filterResult = mysqli_query($conn, $selectSQL);
 
             while($row = mysqli_fetch_array($filterResult)):
-                echo $row;
+                echo $row['cust_fname'];
             endwhile;
             // elseif (isset($_POST['catName']) && isset($_POST['descr']) && isset($_POST['price'])):
             $catName = htmlspecialchars(strip_tags($_POST['catName']));
