@@ -54,9 +54,6 @@
                     endif;
                 endif;
             endwhile;
-            // elseif (isset($_POST['catName']) && isset($_POST['descr']) && isset($_POST['price'])):
-            
-            // echo var_export($_POST['price'], true)."<br>";
         else :
             echo "Please fill out all fields<br>";
         endif;
