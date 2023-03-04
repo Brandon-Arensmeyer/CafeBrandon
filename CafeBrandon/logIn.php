@@ -21,12 +21,12 @@
             <?php echo "<h2>Please enter your account information below</h2>"; ?>
             <form action="<?php $_SERVER['PHP_SELF'] ?>" method="POST">
                 <div id="user">
-                    <label id="first" for="catName">Username:</label>
-                    <input id="firstText" type="text" name="catName" />
+                    <label id="first" for="user">Username:</label>
+                    <input id="firstText" type="text" name="user" />
                 </div>
                 <div id="pass">
-                    <label id="password" for="price">Password:</label>
-                    <input id="passwordText" type="text" name="price" />
+                    <label id="password" for="pass">Password:</label>
+                    <input id="passwordText" type="text" name="pass" />
                 </div>
                 <button id="log" type="submit">Log In</button>
             </form>
@@ -43,15 +43,17 @@
             $conn = new mysqli($servername, $username, $password, $dbname);
 
             $filterResult = mysqli_query($conn, $selectSQL);
+            
+            $user = htmlspecialchars(strip_tags($_POST['catName']));
+            $pass = htmlspecialchars(strip_tags($_POST['price']));
 
             while($row = mysqli_fetch_array($filterResult)):
-                if($username == $row['custname']):
+                if($user === $row['custname']):
                     echo $row['cust_fname'];
                 endif;
             endwhile;
             // elseif (isset($_POST['catName']) && isset($_POST['descr']) && isset($_POST['price'])):
-            $catName = htmlspecialchars(strip_tags($_POST['catName']));
-            $price = htmlspecialchars(strip_tags($_POST['price']));
+            
             // echo var_export($_POST['price'], true)."<br>";
             echo "<h2> Welcome back! <h2>";
         else :
