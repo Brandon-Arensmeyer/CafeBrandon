@@ -44,8 +44,8 @@
 
             $filterResult = mysqli_query($conn, $selectSQL);
             
-            $user = htmlspecialchars(strip_tags($_POST['catName']));
-            $pass = htmlspecialchars(strip_tags($_POST['price']));
+            $user = htmlspecialchars(strip_tags($_POST['user']));
+            $pass = htmlspecialchars(strip_tags($_POST['user']));
 
             while($row = mysqli_fetch_array($filterResult)):
                 if($user === $row['cust_user']):
