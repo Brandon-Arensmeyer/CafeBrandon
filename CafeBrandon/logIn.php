@@ -48,7 +48,7 @@
             $pass = htmlspecialchars(strip_tags($_POST['price']));
 
             while($row = mysqli_fetch_array($filterResult)):
-                if($user === $row['custname']):
+                if($user === $row['cust_user']):
                     echo $row['cust_fname'];
                 endif;
             endwhile;
