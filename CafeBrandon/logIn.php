@@ -50,7 +50,7 @@
             while($row = mysqli_fetch_array($filterResult)):
                 if($user === $row['cust_user']):
                     if($pass = $row['cust_pass']):
-                        echo "<h2> Welcome back" . $row['cust_fname'] . $row['cust_lname'] . "!</h2>";
+                        echo "<h2> Welcome back " . $row['cust_fname'] . " " . $row['cust_lname'] . "!</h2>";
                     endif;
                 endif;
             endwhile;
